@@ -1,0 +1,511 @@
+# table-format file describing allll the monsters
+# this is gonna be a long one
+# for simplification purposes, only concerned with WILDERNESS encounters
+# dungeon stuff...  forthcoming.  Eventually.
+AnkhegEnc
+Cluster of 1d6 ankhegs
+
+AnkhegLair
+Nest of 1d8 ankhegs with [M]
+
+GiantAntEnc
+Swarm of 4d6 giant ants
+
+GiantAntLair
+Giant ant hill with 4d6 ants, (1d10x1000gp in gold nuggets)%0.3/
+with treasure: [I]
+
+WhiteApeLair
+Cave of 2d4 white apes
+
+WhiteApeEnc
+Band of 2d4 white apes
+
+RockBaboonLair
+Den of 5d6 rock baboons
+
+RockBaboonEnc
+Band of 5d6 rock baboons
+
+BasiliskEnc
+Bask of 1d6 basilisks
+
+BasiliskLair
+Nest of 1d6 basilisks, with petrified treasure: [K]
+
+BatEnc
+Flock of 1d10 bats
+
+BatLair
+Nest of bats, 1 bat swarm
+
+GiantBatLair
+Nest of 1d10( vampiric)%0.05 giant bats
+
+GiantBatEnc
+Flock of 1d10( vampiric)%0.05 giant bats
+
+BlackBearLair
+Den of 1d4 black bears
+
+BlackBearEnc
+Sloth of 1d4 black bears
+
+GrizzlyBearLair
+Den of 1d4 grizzly bears
+
+GrizzlyBearEnc
+Sloth of 1d4 grizzly bears
+
+CaveBearLair
+Den of 1d2 cave bears
+
+CaveBearEnc
+Sloth of 1d2 cave bears
+
+PolarBearLair
+Den of 1d2 polar bears
+
+PolarBearEnc
+Sloth of 1d2 polar bears
+
+GiantKillerBeeLair
+Hive of 5d6 giant killer bees, 10 1HD drones, 2HD queen, healing honey (1d4 doses)
+
+GiantKillerBeeEnc
+Swarm of 5d6 giant killer bees
+
+GiantFireBeetleEnc
+Scourge of 2d6 giant fire beetles
+
+GiantFireBeetleLair
+Nest of 2d6 giant fire beetles
+
+GiantBombardierBeetleEnc
+Scourge of 2d6 giant bombardier beetles
+
+GiantBombardierBeetleLair
+Nest of 2d6 giant bombardier beetles
+
+GiantTigerBeetleEnc
+Scourge of 2d4 giant tiger beetles
+
+GiantTigerBeetleLair
+Nest of 2d4 giant tiger beetles
+
+BlinkDogLair
+Den of 2d6 blink dogs, with treasure: [I]
+
+BlinkDogEnc
+Route of 2d6 blink dogs
+
+BoarLair
+Sounder of 1d6 boars
+
+BoarEnc
+Sounder of 1d4 boars
+
+GiantBoarLair
+Sounder of 1d4+1 giant boars
+
+GiantBoarEnc
+Sounder of 1d4 giant boars
+
+BugbearGang
+Gang of 1d4 bugbears and a champion
+
+BugbearEnc
+Warband of [BugbearGang*1d4] and a subchieftain
+
+BugbearLair
+Village of [BugbearEnc*1d10] plus chieftain,( shaman L1d6,)%0.75/
+( witch doctor L1d4,)%0.5 50% women and children
+
+CaecilianEnc
+Clew of 1d3 caecilians, treasure [K] in bellies
+
+CaecilianLair
+Nest of 1d3 caecilians, treasure [K] in bellies
+
+CamelEnc
+Caravan of 2d4 camels
+
+CarcassScavengerEnc
+Clew of 1d3 carcass scavengers
+
+MountainLionEnc
+Litter of 1d4 mountain lions
+
+MountainLionLair
+Den of 1d4 mountain lions
+
+PantherEnc
+Pride of 1d6 panthers
+
+PantherLair
+Den of 1d6 panthers
+
+LionEnc
+Pride of 1d4 lions
+
+LionLair
+Den of 1d8 lions
+
+TigerEnc
+One stalking tiger
+
+TigerLair
+Den of 1d3 tigers
+
+SabretoothTigerLair
+Den of 1d4 sabre-toothed tigers
+
+SabretoothTigerEnc
+Troop of 1d4 sabre-toothed tigers
+
+CentaurEnc
+Troop of 2d10 centaurs and chieftain( with L1d6 cleric casting)%0.5, 200% /
+Females and young plus 5d6 extra young.  Treasure: [L]
+
+CentaurLair
+[CentaurEnc]
+
+GiantCentipedeLair
+Nest of 2d12 giant centipedes
+
+GiantCentipedeEnd
+Swarm of 2d12 giant centipedes
+
+ChimeraLair
+Den of 1d4 chimeras with treasure [K*2]
+
+ChimeraEnc
+Flock of 1d4 chimeras
+
+CockatriceLair
+Nest of 1d8 cockatrice, petrified treasure [I]
+
+CockatriceEnc
+Flock of 1d8 cockatrice
+
+GiantCrabLair
+Colony of 2d6 giant crabs
+
+GiantCrabEnc
+Cluster of 1d6 giant crabs
+
+CrocodileEnc
+Bask of 1d8 crocodiles
+
+CrocodileLair
+[CrocodileEnc]
+
+LargeCrocodileEnc
+Bask of 1d4 large crocodiles
+
+LargeCrocodileLair
+[LargeCrocodileEnc]
+
+GiantCrocodileEnc
+Bask of 1d3 giant crocodiles
+
+GiantCrocodileLair
+[GiantCrocodileEnc]
+
+CyclopsLair
+Cave-lair of 1d4 cyclops, treasure [N]
+
+CyclopsEnc
+Gang of 1d4 cyclops
+
+DemonBoarLair
+Lair of 1d4 demon boars( and 1d3 charmed human thralls)%0.75, treasure [O], [L]
+
+DemonBoarEnc
+Sounder of 1d4 demon boars
+
+DjinniLair
+One djinni
+
+DjinniEnc
+One djinni
+
+# good lord, there are a lot of monsters
+HuntingDogLair
+Den of 3d6 hunting dogs
+
+HuntingDogEnc
+Route of 3d6 hunting dogs
+
+WarDogLair
+Den of 2d4 war dogs
+
+WarDogEnc
+Route of 2d4 war dogs
+
+DoppelgangerLair
+Lair of 1d6 doppelgangers
+
+DoppelgangerEnc
+Throng of 1d6 doppelgangers
+
+# TODO random dragon special ability generation
+# because they're neat
+TrueDragonLair
+2d4
+2: Lair of 1d4 wyrmlings, treasure [B]
+3: Lair of 1d4 very young dragons, treasure [H]
+4: Lair of 1d4 young dragons, treasure [N]
+5: Lair of 1d4 juvenile dragons, treasure [Q]
+6: Lair of 1d4 adult dragons, treasure [Q], [N]
+7: Lair of 1d4 mature adult dragons, treasure [Q], [N]
+8: [OldDragonLair]
+
+OldDragonLair
+1d6
+3: Lair of 1d2 old dragons, treasure [R]
+4: Lair of 1d2 very old dragons, treasure [R]
+5: Lair of 1d2 ancient dragons, treasure [R]
+6: Lair of a venerable dragon, treasure [R], [N]
+
+TrueDragonEnc
+2d4
+2: Flight of 1d4 wyrmlings
+3: Flight of 1d4 very young dragons
+4: Flight of 1d4 young dragons
+5: Flight of 1d4 juvenile dragons
+6: Flight of 1d4 adult dragons
+7: Flight of 1d4 mature adult dragons
+8: [OldDragonEnc]
+
+OldDragonEnc
+1d6
+3: Flight of 1d2 old dragons
+4: Flight of 1d2 very old dragons
+5: Flight of 1d2 ancient dragons
+6: Flight of one venerable dragon
+
+DragonTurtleLair
+Lair of one dragon turtle, treasure [R], [N]
+
+DragonTurtleEnc
+One dragon turtle
+
+DwarfLair
+Dwarven vault of: [DwarfEnc*1d10].  Ruled by L9 vaultlord, 2d6 elite vaultguards L1d4+1/
+( and a craftpriest of L6+1d2)%0.5.  (The vault is guarded by [DwarfWarAnimals]/
+.  )%0.6Also 50% noncombatants and 25% young.
+
+DwarfWarAnimals
+5d4 war dogs
+2d4 trained brown bears
+
+DwarfEnc
+Company of 1d12d6 dwarves led by a L1d4+1 vaultguard, treasure [D]
+
+DwarfSquad
+Squad of 1d6 dwarves
+
+EfreetiLair
+[EfreetiEnc]
+
+EfreetiEnc
+One efreeti
+
+ElementalEnc
+[ElementalLair]
+
+ElementalLair
+One elemental
+
+ElephantLair
+[ElephantEnc]
+
+ElephantEnc
+Herd of 1d20 elephants
+
+ElfLair
+Elven fastness of: [ElfEnc*1d10].  Ruled by L9 wizard-lord, elite guard of 2d6 L1d6+1 spellswords/
+( and a nightblade L6+1d2)%0.5.  (The fastness is guarded by 2d6 giant hawks.  )%0.7/
+100% noncombatants and 5% children.
+
+ElfEnc
+Company of 1d10d4 elves with spellsword L1d6+1 leader, treasure [E]
+
+ElfFel
+Fellowship of 1d4 elves
+
+EttinEnc
+Warband of 1d4 ettins
+
+EttinLair
+Lair of 1d4 ettins, treasure [N], [H]
+
+PixieLair
+Lair of 1d4x10 pixies, treasure [B]
+
+PixieEnc
+Flight of 1d4x10 pixies
+
+SpriteEnc
+Wing of 3d6 sprites
+
+SpriteLair
+Lair of 3d6 sprites, treasure [B]
+
+GiantCatfishLair
+School of 1d2 giant catfish
+
+GiantPiranhaLair
+Pack of 2d4 giant piranha
+
+GiantRockfishLair
+School of 2d4 giant rockfish
+
+GiantSturgeonLair
+Giant sturgeon, treasure [I] in belly
+
+GiantCarnivorousFlyLair
+Nest of 2d6 giant carnivorous flies, treasure [C]
+
+GargoyleLair
+Lurk of 2d4 gargoyles, treasure [H]
+
+GelatinousCubeLair
+Gelatinous cube, treasure [C] in body
+
+GhoulLair
+Lair of 2d8 ghouls, treasure [D]
+
+HillGiantLair
+Lair of 2d4 hill giants, treasure [N]
+
+StoneGiantLair
+Lair of 1d6 stone giants( guarded by 1d4 cave bears)%0.5, treasure [N]
+
+FrostGiantLair
+Lair of 1d6 frost giants guarded by [FrostGiantGuardAnimals], treasure [N]
+
+FrostGiantGuardAnimals
+1d10
+8: 6d6 dire wolves
+10: 3d6 polar bears
+
+FireGiantLair
+Lair of 1d3 fire giants guarded by [FireGiantGuardAnimals], treasure [N]
+
+FireGiantGuardAnimals
+1d10
+8: 3d6 hellhounds
+10: 1d3 pyrohydras
+
+CloudGiantLair
+Floating castle of 1d3 cloud giants(, at least one of whom casts as an L2d4 mage)%0.05, guarded by [CloudGiantGuardAnimals], treasure [N]
+
+CloudGiantGuardAnimals
+6d6 dire wolves
+3d6 giant hawks
+
+StormGiantLair
+1d10
+7: Floating castle in clouds of 1d3 storm giants(, at least one of whom casts as an L2d6 mage)%0.1, guarded by 2d4 griffons, tresaure [N], [H]
+9: Mountain castle of 1d3 storm giants(, at least one of whom casts as an L2d6 mage)%0.1, guarded by 2d4 griffons, tresaure [N], [H] 
+10: Underwater castle of 1d3 storm giants(, at least one of whom casts as an L2d6 mage)%0.1, guarded by 3d6 giant crabs, tresaure [N], [H]
+
+GnollLair
+Gnoll village of: [GnollEnc*1d10].  Ruled by gnoll chieftain(, shaman L1d4+1)%0.6(, witch-doctor L1d4)%0.5.  /
+Also has( 1d3 troll guards,)%0.33( 4d4 trained hyenas,)%0.66 +10% slaves, +50% females, and +200% young.
+
+GnollEnc
+Warband of 1d6 gnoll gangs (each of d6 gnolls+champ) led by subchieftain, treasure [G]
+
+GnomeLair
+Gnomish vault of...
+
+GoblinLair
+Goblin village of: [GoblinEnc*1d10].  Ruled by chieftain(, shaman L2d4)%0.75(, witch-doctor L1d6)%0.5. /
+Also has( 5d6 dire wolves,)%0.6( 2d6 bugbear mercs,)%0.2 +60% females, and +100% young.
+
+GoblinEnc
+Goblin warband of 4d6d4 goblins(, of which 1/4 are mounted,)%0.20 plus subchief, treasure [E]
+
+GorgonLair
+Den of 1d4 gorgons, treasure [K]
+
+GrayOozeLair
+One gray ooze
+
+GriffonLair
+Aerie of 2d8 griffons( with [GriffonYoung])%0.5, treasure [P]
+
+GriffonYoung
+1d6 eggs
+1d4 young
+
+HalflingLair
+Infestation of halflings (~140 with 1d6+1HD sheriff and 5d4 2HD militia, treasure [D*5])
+
+HarpyLair
+Nest of 2d4 harpies, treasure [E]
+
+HawkLair
+Aerie of 1d6 hawks
+
+GiantHawkLair
+Aerie of 1d3 giant hawks(, with 1d4 eggs or 1d2 young)%0.5
+
+HellhoundLair
+Den of 2d4 hell hounds
+
+GreaterHellhoundLair
+Den of 2d4 greater hell hounds
+
+HerdAnimalLair
+Herd of 3d10 herd animals
+
+HippogriffLair
+Aerie of 2d8 hippogriffs( with [GriffonYoung])%0.5, treasure [F]
+
+HobgoblinLair
+Hobgoblin village of: [HobgoblinEnc*1d10].  Ruled by chieftain(, shaman L1d8)%0.9(, witch-doctor L1d6)%0.75. /
+Also has( 2d6 trained white apes,)%0.6 +150% females and +300% young.
+
+HobgoblinEnc
+Hobgoblin warband of 1d8 gangs (each d6 hobs plus champ) led by subchief, treasure [E]
+
+HorseEnc
+Herd of 1d10x10 [HorseType] horses
+
+HorseType
+light
+medium
+heavy
+
+HydraLair
+Lair of 1 [HydraType]
+
+HydraType
+1d8
+3: 1d3+4-headed hydra, treasure [I]
+8: 1d5+7-headed hydra, treasure [K]
+
+KoboldLair
+Kobold village of: [KoboldEnc*1d10].  Ruled by chieftain(, shaman L1d6)%0.75(, witch-doctor L1d4)%0.5./
+Guarded by [KoboldGuardAnimals].  +50% females and +150% young.
+
+KoboldGuardAnimals
+1d10
+7: 1d4+1 boars
+10: 1d4 giant weasels
+
+KoboldEnc
+Kobold warband of 4d6d4 kobolds plus 1d6 champs and subchief, treasure [E]
+
+LamiaLair
+Lair of one lamia, treasure [N]
+
+LammasuLair
+Lair of 2d4 lammasu, treasure [R]
+
+GiantLeechLair
+Brood of 1d4 giant leeches
