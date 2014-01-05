@@ -48,5 +48,5 @@ for r in range(0,args.rows):
       monstertable = ''.join(monster.rstrip().lstrip().split(" ")) + encTypeSuffix
       if args.full and monstertable in tables.tabledice.keys():
         lairout = tables.evaltable(monstertable)
-        print "\t" + lairout
+        print "\t" + lairout+"\n"
     print ""
