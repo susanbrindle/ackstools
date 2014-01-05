@@ -33,6 +33,18 @@ Scripts and supporting config files:
     Uses classes, genprofs, spells, and treasuretables as data files
     Uses libspellbook.py, libhenches.py, and tables.py as dependencies
 
+  hex2.py - Hex stocking and wilderness random encounter generation, v2
+    Can generate fully-stocked lairs down to arbitrary detail
+    Has a bunch of command line options, consult --help for details.
+    Deciding on the correct depth/detail to generate needs some work,
+    as does formatting the outputs nicely.
+    (Currently full-detail humanoid lairs are really ugly)
+    That's really a question of modifying monstertables, though.
+    monstertables is a mapping from monster type to number encountered/treasure
+    enctables is a transcription of the wilderness tables from pages 244-247
+    Uses treasuretables, monstertables, and enctables as data files
+    Uses dice.py, tables.py as dependencies
+
   hirelings.py - How many mercenaries are available in town this month?
     Uses hireprices as a data file
 
