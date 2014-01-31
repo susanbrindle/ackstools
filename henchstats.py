@@ -42,13 +42,10 @@ if args.filterclass:
 
 
 if args.market == 10:
-  # TODO move filtering logic into filteredGenHenches in libhenches
-  ol = libhenches.genHenches(args.num, int(args.level), classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
   if args.filterclass:
-    ol = filter(lambda s: args.filterclass in s,ol)
-    while len(ol) < args.num:
-      ol.extend(libhenches.genHenches(args.num-len(ol),int(args.level),classes,args.market,args.alignment,spells,names,profs,args.treasure != ''))
-      ol = filter(lambda s: args.filterclass in s,ol)
+    ol = libhenches.genHenchesFiltered(args.filterclass, args.num, int(args.level), classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
+  else:
+    ol = libhenches.genHenches(args.num, int(args.level), classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
   outstring = '\n'.join(ol)
   print outstring
 
@@ -58,11 +55,9 @@ else:
     for level in range(0,5):
       numHenches = libhenches.rollMarket(libhenches.marketClasses[args.market-1][level])
       print "L" + str(level) + "s: " + str(numHenches)
-      ol = libhenches.genHenches(numHenches, level, classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
-      if args.filterclass and level > 0:
-        ol = filter(lambda s:args.filterclass in s,ol)
-        while len(ol) < numHenches:
-          ol.extend(libhenches.genHenches(numHenches-len(ol),level,classes,args.market,args.alignment,spells,names,profs,args.treasure != ''))
-          ol = filter(lambda s: args.filterclass in s,ol)
+      if args.filterclass:
+        ol = libhenches.genHenchesFiltered(args.filterclass, numHenches,level, classes, args.market, args.alignment, spells, names, profs, args.treasure != '') 
+      else:
+        ol = libhenches.genHenches(numHenches, level, classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
       outstring = '\n'.join(ol)
       print outstring

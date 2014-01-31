@@ -93,7 +93,13 @@ def parseClasses(classfilename):
   outlist = []
   # structure of output list is list of tuples containing
   # name of class
-  # weight function for class
+  # class HD
+  # list of weight functions for class
+  # list of permitted magic items
+  # gender ratio
+  # general frequency multiplier
+  # This is terrible and despite my loathing for them 
+  # I should use an object here
   for s in classlist:
     tmp = s.split(", ")
     # get class name
@@ -164,11 +170,7 @@ def genHenches(numHenches, level, classes, market, al, spells, names, profs,gear
     if classes != []:
       cweights = []
       for c in classes:
-        weight = qualweights[0]
-        for f in c[2]:
-          v = f(stats)
-          if v < weight:
-            weight = v
+        weight = min([f(stats) for f in c[2]])
         cweights.append((c[5] * weight, c))
       cweights = filter((lambda t: t[0] > 0),cweights)
       poss = []
@@ -286,3 +288,14 @@ def genHenches(numHenches, level, classes, market, al, spells, names, profs,gear
       ostring += '\n'
     outlist.append(ostring)
   return outlist
+
+def genHenchesFiltered(fclass,numHenches, level, classes, market, al, spells, names, profs,gear,notabs=True):
+  ol = genHenches(numHenches, level, classes, market, al, spells, names, profs, gear, notabs)
+  if level == 0:
+    return ol
+  else:
+    ol = filter(lambda s: fclass in s,ol)
+    while len(ol) < numHenches:
+      ol.extend(genHenches(numHenches-len(ol), level, classes, market, al, spells, names, profs, gear, notabs))
+      ol = filter(lambda s:fclass in s,ol)
+    return ol
