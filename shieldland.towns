@@ -1,9 +1,9 @@
 # file containing town descriptions
 # for purposes of demand modifier generation
 # structure for each town is:
-# one line containing Name, class, gpval or R for random, descriptors
+# one line containing Name, market class, land value or R for random, descriptors
 # valid descriptors:
-#   fresh - <20 years old
+#   Fresh - <20 years old
 #   Young - 20-100 years
 #   Mature - 100-1000 years
 #   Old - 1000-2000 years
@@ -13,9 +13,12 @@
 #   Plains, Hills, Mountains
 #   Elf, Dwarf
 #   These descriptors are space-separated, order not important
-# one or more lines containing possible connected settlements of the form
-# whitespace townname, distance (hexes), [W|R]
-# W and R signify water or road
+# After towns, we have a blank line, then a list of
+# one or more lines containing possible connected settlements.
+# These are formatted as
+# townname, townname, distance (in 6-mile hexes), [W|R]
+# W and R signify water or road links
+# TODO program to generate these files from a map
 Freeport, 2, R, Mature Sea River Plains Scrub
 Deal, 4, R, Mature River Desert Plains
 Opportunity, 4, 7, Young Desert Hills
