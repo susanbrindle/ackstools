@@ -147,6 +147,7 @@ def parseProfs(proffile):
     
 
 def genHenches(numHenches, level, classes, market, al, spells, names, profs,gear,notabs=True):
+  outlist = []
   for k in range(0,numHenches):
     stats=[]
     for i in range(0,6):
@@ -283,4 +284,5 @@ def genHenches(numHenches, level, classes, market, al, spells, names, profs,gear
     if notabs:
       ostring = re.sub('\t*','',ostring)
       ostring += '\n'
-    print ostring
+    outlist.append(ostring)
+  return outlist

@@ -3,11 +3,13 @@ import argparse
 import libhenches
 import libspellbook
 import tables
+import sys
 
 parser = argparse.ArgumentParser(description="Generate pile of stats for henches")
 parser.add_argument("-n","--num",type=int,default=1,help="Number of henches to generate.\
   If market class is set, instead is number of months to generate henches for that market")
 parser.add_argument("-c","--classes",default="",help="File to draw classes from")
+parser.add_argument("-f","--filterclass",default="",help="Generate characters only of this class")
 parser.add_argument("-m","--market",type=int, default=10,help="Market class value to use")
 parser.add_argument("-a","--alignment",action="store_true",help="Generate alignments")
 parser.add_argument("-s","--spells",default="",help="File to draw arcane spell list from")
@@ -32,13 +34,35 @@ if args.treasure != "":
 if args.genprofs != "":
   profs = libhenches.parseProfs(args.genprofs)
 
+if args.filterclass:
+  cl = [t[0] for t in classes]
+  if args.filterclass not in cl:
+    print "Class %s not found in class file (used same case?)"%args.filterclass
+    sys.exit(1)
+
+
 if args.market == 10:
-  libhenches.genHenches(args.num, int(args.level), classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
+  # TODO move filtering logic into filteredGenHenches in libhenches
+  ol = libhenches.genHenches(args.num, int(args.level), classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
+  if args.filterclass:
+    ol = filter(lambda s: args.filterclass in s,ol)
+    while len(ol) < args.num:
+      ol.extend(libhenches.genHenches(args.num-len(ol),int(args.level),classes,args.market,args.alignment,spells,names,profs,args.treasure != ''))
+      ol = filter(lambda s: args.filterclass in s,ol)
+  outstring = '\n'.join(ol)
+  print outstring
+
 else:
   for month in range(0,args.num):
     print "Month " + str(month) + ":"
     for level in range(0,5):
       numHenches = libhenches.rollMarket(libhenches.marketClasses[args.market-1][level])
       print "L" + str(level) + "s: " + str(numHenches)
-      libhenches.genHenches(numHenches, level, classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
-  print ""
+      ol = libhenches.genHenches(numHenches, level, classes, args.market, args.alignment, spells, names, profs, args.treasure != '')
+      if args.filterclass and level > 0:
+        ol = filter(lambda s:args.filterclass in s,ol)
+        while len(ol) < numHenches:
+          ol.extend(libhenches.genHenches(numHenches-len(ol),level,classes,args.market,args.alignment,spells,names,profs,args.treasure != ''))
+          ol = filter(lambda s: args.filterclass in s,ol)
+      outstring = '\n'.join(ol)
+      print outstring
